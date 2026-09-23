@@ -20,7 +20,7 @@
         <main>
             <section id="expectations">
                 <h2>Registration Form Information</h2>
-                <p>
+                <p class="expectations">
                     Please fill out this form with required* information and the date(s) you would like to register for. 
                     We will use this information to register and contact you with your entry ticket and any additional details. 
                     All your input data is secured and will not be used or sold for other purposes.   
@@ -45,11 +45,11 @@
                 </fieldset>
 
                 <fieldset>
-                    <p>Every registered individual gets a free t shirt upon entry! Choose your preferred shirt size (unisex). <br>
+                    <p class="help">Every registered individual gets a free t shirt upon entry! Choose your preferred shirt size (unisex). <br>
                         ! One t-shirt per person. You will receive your shirt at your first workshop, but will not get multiple if you are signed up for multiple workshops.</p>
                     <legend>T-shirt Size</legend>
                     <label for="select_size">Choose your shirt size*:</label>
-                    <select name="selected_size" id="select_size" required>
+                    <select name="selected_size" id="select_size" required class="field">
                         <option value="" disabled selected>--Please select a size--</option>
                         <optgroup label="Shirt Sizes">
                             <option value="xs">XS</option>
@@ -65,7 +65,7 @@
 
                 <fieldset>
                     <legend>Workshop Date Selection</legend>
-                    <p class="help">Check the date(s) you would like to sign up!*</p>
+                    <p class="help">Check the boxes of the date(s) you would like to sign up!*</p>
                     <p class="important-info">If NO dates are selected, you will not be registered.</p>
                         <div>
                             <input type="checkbox" name="selected_date1" id="date_1" value="oct10">
@@ -89,19 +89,20 @@
                         </div>
                 </fieldset>
 
-                    <div class="field">
-                        <label for="questions">Have a Question?</label>
-                        <p class="help" id="questions-help">Ask any questions you may have about our coffee workshop! Your questions will go straight to our support staff who will contact your given email with answers and any other help you may need. </p>
+                    <div class="field-question">
+                        <label for="questions" class="question">Have a Question?</label>
+                        <p class="help-question" id="questions-help">Ask any questions you may have about our coffee workshop! Your questions will go straight to our support staff who will contact your given email with answers and any other help you may need. </p>
                         <textarea id="questions" name="questions" value="" aria-describedby="questions-help" autocomplete="off"></textarea>
                     </div>
 
                     <div class="subscribe">
                         <input type="checkbox" name="subscribe_newsletter" id="subscribe" value="yes">
-                        <label for="subscribe">Subscribe to our newsletter to hear about future coffee events!</label> 
+                        <label for="subscribe" class="subscribe">Subscribe to our newsletter to hear about future coffee events!</label> 
                     </div>
 
-                    <button type="submit">Register</button>
+                    <button class="button" type="submit">Register</button>
                 </form>
+
                 <section id="states">
                     <h2>F5 · State and Recovery Specimen</h2>
                     <p>Document default, focus, required, valid, invalid, disabled, and a static server-returned error. Keep this section separate from the primary blank form when necessary to avoid misleading users.</p>
