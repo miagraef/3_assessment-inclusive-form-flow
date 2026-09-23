@@ -76,14 +76,44 @@
                         <td>Email is used for contacting person registering only for info on these workshops and for the entry ticket. Additional emails sent if user inputs any questions.</td>
                     </tr>
                     <tr>
-                        <td>Workshop is providing one t-shirt for registered attendees. (No matter how many workshops they are signed up for)</td>
-                        <td>Need t-shirt size for inventory ordering before workshop dates.</td>
+                        <td>T-shirt Size</td>
+                        <td>Workshop is providing one t-shirt for registered attendees. (No matter how many workshops they are signed up for)Need t-shirt size for inventory ordering before workshop dates.</td>
                         <td>Yes</td>
                         <td>select</td>
                         <td>"selected_size"/"XS/Small/Medium/Large/X-large/XX-large/Opt Out"</td>
                         <td>option</td>
                         <td>Required*, may only choose one option out of optgroup. Selected option title is disabled.</td>
                         <td>Minimized options with drop down menu. Size is requested for free merchandise upon entry for workshop. Users have the option to chose 'opt out' if they do not want a t-shirt and/or do not want to provide their size.</td>
+                    </tr>
+                    <tr>
+                        <td>Workshop Date Selection</td>
+                        <td>Form offers 5 different workshop dates users can register for. They may register for more than 1.</td>
+                        <td>Not in form, however, users will not be registered if they leave date selection blank.</td>
+                        <td>checkbox</td>
+                        <td>"selected_date"/"oct10/oct12/oct14/oct16/oct18"</td>
+                        <td>checkbox</td>
+                        <td>None</td>
+                        <td>Crucial information for registration - registers users for dates they select along with other provided information.</td>
+                    </tr>
+                    <tr>
+                        <td>Have a Question?</td>
+                        <td>Users may have further questions about the workshop they can put into this text box.</td>
+                        <td>Not required</td>
+                        <td>text</td>
+                        <td>"questions"/""</td>
+                        <td>Autocomplete off</td>
+                        <td>None</td>
+                        <td>Optional to fill out. No character length constraint because some may ask more questions than others.</td>
+                    </tr>
+                    <tr>
+                        <td>Subscribe to our newsletter to hear about future coffee events!</td>
+                        <td>Optional checkbox to sign up for coffee newsletter inquiring on future workshops</td>
+                        <td>Not required</td>
+                        <td>checkbox</td>
+                        <td>"subscribe_newsletter"/"yes"</td>
+                        <td>checkbox</td>
+                        <td>None</td>
+                        <td>Optional to fill out. If checked, users will subscribe with the same email required to enter earlier.</td>
                     </tr>
                 </tbody>
             </table>
