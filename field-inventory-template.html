@@ -39,21 +39,51 @@
                         <th>Required?</th>
                         <th>Native control/type</th>
                         <th>Submitted name/value</th>
-                        <th>Autocomplete/inputmode</th>
+                        <th>Autocomplete/<br>inputmode</th>
                         <th>Constraint/instruction</th>
                         <th>Sensitivity and minimization decision</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Example only</td>
-                        <td>Replace</td>
-                        <td>Yes/No</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace or N/A</td>
-                        <td>Replace or none</td>
-                        <td>Replace</td>
+                        <td>First Name</td>
+                        <td>Ensure user inputs full name</td>
+                        <td>Yes</td>
+                        <td>Name</td>
+                        <td>"first_name"/""</td>
+                        <td>Off</td>
+                        <td>Required*</td>
+                        <td>Form needs first name to register user and check them in to the workshop.</td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td>Ensure user inputs full name</td>
+                        <td>Yes</td>
+                        <td>Name</td>
+                        <td>"last_name"/""</td>
+                        <td>Off</td>
+                        <td>Required*</td>
+                        <td>Form needs last name to register user and check them in to the workshop.</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>Needed to send individual information about registration and their entry ticket</td>
+                        <td>Yes</td>
+                        <td>Email</td>
+                        <td>"email"/""</td>
+                        <td>Off</td>
+                        <td>Required*, Email must follow default email format (user@blank.com)</td>
+                        <td>Email is used for contacting person registering only for info on these workshops and for the entry ticket. Additional emails sent if user inputs any questions.</td>
+                    </tr>
+                    <tr>
+                        <td>Workshop is providing one t-shirt for registered attendees. (No matter how many workshops they are signed up for)</td>
+                        <td>Need t-shirt size for inventory ordering before workshop dates.</td>
+                        <td>Yes</td>
+                        <td>select</td>
+                        <td>"selected_size"/"XS/Small/Medium/Large/X-large/XX-large/Opt Out"</td>
+                        <td>option</td>
+                        <td>Required*, may only choose one option out of optgroup. Selected option title is disabled.</td>
+                        <td>Minimized options with drop down menu. Size is requested for free merchandise upon entry for workshop. Users have the option to chose 'opt out' if they do not want a t-shirt and/or do not want to provide their size.</td>
                     </tr>
                 </tbody>
             </table>

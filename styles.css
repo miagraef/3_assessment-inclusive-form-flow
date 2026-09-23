@@ -33,6 +33,9 @@ body{
     max-width:var(--measure);
     font-size:1.25rem;
 }
+.location {
+    font-size:1rem;
+}
 main{
     max-width:52rem;
     margin:auto;
@@ -53,6 +56,7 @@ fieldset{
     border:1px solid #d0d0d0;
     border-radius:var(--radius);
 }
+
 legend,label{
     font-weight:700;
 }
@@ -63,7 +67,7 @@ legend,label{
 input,select,textarea,button{
     font:inherit;
 }
-input:not([type="radio"]):not([type="checkbox"]),select,textarea{
+input:not([type="checkbox"]),select,textarea{
     width:100%;
     padding:.75rem;
     border:2px solid var(--color-border);
@@ -73,10 +77,11 @@ textarea{
     min-height:8rem;
     resize:vertical;
 }
+.workshop-time {
+    font-weight: bold;
+}
 .choice{
-    display:flex;
-    gap:.65rem;
-    align-items:flex-start;
+    gap:.5rem;
     padding:.5rem 0;
 }
 .choice input{

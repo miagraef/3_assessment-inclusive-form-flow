@@ -7,41 +7,100 @@
     </head>
     <body>
         <header class="page-header">
-            <p class="eyebrow">Application, Registration, or Request</p>
-            <h1>Replace with a specific task title</h1>
-            <p class="lede">Explain who this form is for, what it accomplishes, how long it takes, and what happens after submission.</p>
+            <p class="eyebrow">Registration</p>
+            <h1>Coffee Workshop Registration</h1>
+            <p class="lede">
+                Calling all Denver, Colorado baristas! 
+                Register for our FREE coffee workshop to learn tips and tricks from the experts. 
+                Registration takes just 10 minutes. 
+                Upon submission, you will be on our list and an entry ticket will be emailed to you!
+            </p>
+            <h2 class="location">Location: 123 Coffee Street Denver, Colorado 80123</h2>
         </header>
         <main>
             <section id="expectations">
-                <h2>F1 · Purpose and Expectations</h2>
-                <p>State the required/optional convention and a concise privacy notice. Use fictional test data only.</p>
+                <h2>Registration Form Information</h2>
+                <p>
+                    Please fill out this form with required* information and the date(s) you would like to register for. 
+                    We will use this information to register and contact you with your entry ticket and any additional details. 
+                    All your input data is secured and will not be used or sold for other purposes.   
+                </p>
             </section>
             <form action="" method="get">
                 <fieldset>
-                    <legend>F3 · Contact information</legend>
-                    <p class="help">Replace or extend this group based on your justified field inventory.</p>
+                    <legend id="one-attendee">Contact Information</legend>
+                    <p class="help">Enter the required(*) contact information. We will send your entry ticket and any additional workshop information to the email provided. Your name will be used to check into the workshop.</p>
                     <div class="field">
-                        <label for="name">Name</label>
-                        <input id="name" name="name" type="text" autocomplete="name">
+                        <label for="first_name">First Name*</label>
+                        <input id="first_name" name="first_name" type="name" value="" autocomplete="off" required>
                     </div>
                     <div class="field">
-                        <label for="email">Email address (required)</label>
-                        <input id="email" name="email" type="email" autocomplete="email" required>
+                        <label for="last_name">Last Name*</label>
+                        <input id="last_name" name="last_name" type="name" value="" autocomplete="off" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email address*</label>
+                        <input id="email" name="email" type="email" value="" autocomplete="off" required>
                     </div>
                 </fieldset>
+
                 <fieldset>
-                    <legend>F3 · Request choices</legend>
-                    <p class="help">Use an appropriate radio, checkbox, or select structure for the task.</p>
-                    <label class="choice">
-                        <input type="radio" name="request_type" value="option-a"> Replace with option A</label>
-                        <label class="choice"><input type="radio" name="request_type" value="option-b"> Replace with option B</label>
-                    </fieldset>
+                    <p>Every registered individual gets a free t shirt upon entry! Choose your preferred shirt size (unisex). <br>
+                        ! One t-shirt per person. You will receive your shirt at your first workshop, but will not get multiple if you are signed up for multiple workshops.</p>
+                    <legend>T-shirt Size</legend>
+                    <label for="select_size">Choose your shirt size*:</label>
+                    <select name="selected_size" id="select_size" required>
+                        <option value="" disabled selected>--Please select a size--</option>
+                        <optgroup label="Shirt Sizes">
+                            <option value="xs">XS</option>
+                            <option value="Small">Small</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Large">Large</option>
+                            <option value="X-Large">X-Large</option>
+                            <option value="XX-Large">XX-Large</option>
+                            <option value="opt-out">Opt Out (will not receive a T-shirt)</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Workshop Date Selection</legend>
+                    <p class="help">Check the date(s) you would like to sign up!*</p>
+                    <p class="important-info">If NO dates are selected, you will not be registered.</p>
+                        <div>
+                            <input type="checkbox" name="date_1" id="date_1" value="oct10">
+                            <label class="choice" for="date_1">October 10th 10:00AM to 3:00PM (MT)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="date_2" id="date_2" value="oct12">
+                            <label class="choice" for="date_2">October 12th 10:00AM to 3:00PM (MT)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="date_3" id="date_3" value="oct14">
+                            <label class="choice" for="date_3">October 14th 10:00AM to 3:00PM (MT)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="date_4" id="date_4" value="oct16">
+                            <label class="choice" for="date_4">October 16th 10:00AM to 3:00PM (MT)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="date_5" id="date_5" value="oct18">
+                            <label class="choice" for="date_5">October 18th 10:00AM to 3:00PM (MT)</label>
+                        </div>
+                </fieldset>
+
                     <div class="field">
-                        <label for="details">Request details</label>
-                        <p class="help" id="details-help">Explain the expected content and any limit before entry.</p>
-                        <textarea id="details" name="details" aria-describedby="details-help"></textarea>
+                        <label for="questions">Have a Question?</label>
+                        <p class="help" id="questions-help">Ask any questions you may have about our coffee workshop! Your questions will go straight to our support staff who will contact your given email with answers and any other help you may need. </p>
+                        <textarea id="questions" name="questions" aria-describedby="questions-help" autocomplete="off"></textarea>
                     </div>
-                    <button type="submit">Replace with a specific action</button>
+
+                    <div class="subscribe">
+                        <input type="checkbox" name="subscribe_newsletter" id="subscribe" value="yes">
+                        <label for="subscribe">Subscribe to our newsletter to hear about future coffee events!</label> 
+                    </div>
+
+                    <button type="submit">Register</button>
                 </form>
                 <section id="states">
                     <h2>F5 · State and Recovery Specimen</h2>
