@@ -124,7 +124,7 @@ textarea{
     color: var(--color-action);
     font-weight: 600;
     background-color: var(--color-field-background);
-    padding: 0.5rem;
+    padding: 0.75rem;
     border-radius: var(--radius);
 }
 .field-question {
@@ -132,6 +132,9 @@ textarea{
     padding: 2rem;
     border-radius: var(--radius);
     border: 2px solid var(--color-field-background);
+}
+input, select:user-invalid {
+    border: 3px dashed var(--color-error);
 }
 .choice{
     gap:.5rem;
@@ -161,6 +164,7 @@ button{
     outline:.2rem solid var(--color-accent);
     outline-offset:.2rem;
 }
+
 .error-summary,.field-error{
     padding:1rem;
     border-left:.4rem solid var(--color-error);

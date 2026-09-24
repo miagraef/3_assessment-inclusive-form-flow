@@ -3,8 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Inclusive Form Flow</title><link rel="stylesheet" href="styles.css">
+        <title>Inclusive Form Flow</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
+
     <body>
         <header class="page-header">
             <p class="eyebrow">Registration</p>
@@ -26,17 +28,17 @@
                     All your input data is secured and will not be used or sold for other purposes.   
                 </p>
             </section>
-            <form action="" method="get">
+            <form method="get">
                 <fieldset>
                     <legend id="one-attendee">Contact Information</legend>
                     <p class="help">Enter the required(*) contact information. We will send your entry ticket and any additional workshop information to the email provided. Your name will be used to check into the workshop.</p>
                     <div class="field">
                         <label for="first_name">First Name*</label>
-                        <input id="first_name" name="first_name" type="name" value="" autocomplete="off" required>
+                        <input id="first_name" name="first_name" type="text" value="" autocomplete="off" required>
                     </div>
                     <div class="field">
                         <label for="last_name">Last Name*</label>
-                        <input id="last_name" name="last_name" type="name" value="" autocomplete="off" required>
+                        <input id="last_name" name="last_name" type="text" value="" autocomplete="off" required>
                     </div>
                     <div class="field">
                         <label for="email">Email address*</label>
@@ -45,9 +47,9 @@
                 </fieldset>
 
                 <fieldset>
+                    <legend>T-shirt Size</legend>
                     <p class="help">Every registered individual gets a free t shirt upon entry! Choose your preferred shirt size (unisex). <br>
                         ! One t-shirt per person. You will receive your shirt at your first workshop, but will not get multiple if you are signed up for multiple workshops.</p>
-                    <legend>T-shirt Size</legend>
                     <label for="select_size">Choose your shirt size*:</label>
                     <select name="selected_size" id="select_size" required class="field">
                         <option value="" disabled selected>--Please select a size--</option>
@@ -92,7 +94,7 @@
                     <div class="field-question">
                         <label for="questions" class="question">Have a Question?</label>
                         <p class="help-question" id="questions-help">Ask any questions you may have about our coffee workshop! Your questions will go straight to our support staff who will contact your given email with answers and any other help you may need. </p>
-                        <textarea id="questions" name="questions" value="" aria-describedby="questions-help" autocomplete="off"></textarea>
+                        <textarea id="questions" name="questions" aria-describedby="questions-help" autocomplete="off"></textarea>
                     </div>
 
                     <div class="subscribe">
@@ -119,8 +121,9 @@
                 </section>
                 <section id="documentation">
                     <h2>F2 and F6 · Planning and Evidence</h2>
+                    <p><a href="field-inventory-template.html">Field Inventory Template</a></p>
                     <p>Link your field inventory, state matrix, fictional test-data list, completed test record, and AI disclosure.</p>
                 </section>
             </main>
         </body>
-        </html>
+</html>
