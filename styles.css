@@ -133,7 +133,10 @@ textarea{
     border-radius: var(--radius);
     border: 2px solid var(--color-field-background);
 }
-input, select:user-invalid {
+input:user-invalid {
+    border: 3px dashed var(--color-error);
+}
+select:user-invalid {
     border: 3px dashed var(--color-error);
 }
 .choice{
